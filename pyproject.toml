@@ -1,0 +1,20 @@
+[project]
+name = "tetrika"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "AlexandrSmolyachkovGH",email = "alexandr.smolyachkov@gmail.com"}
+]
+requires-python = ">=3.10"
+dependencies = [
+    "pytest (>=8.3.5,<9.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "beautifulsoup4 (>=4.13.4,<5.0.0)"
+]
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+[tool.poetry]
+packages = [
+    { include = "tasks" }
+]
