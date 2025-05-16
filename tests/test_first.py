@@ -1,7 +1,7 @@
 import pytest
 from contextlib import nullcontext as does_not_raise
 
-from tasks.first import sum_two
+from tasks.task1.solution import sum_two
 
 
 # First task

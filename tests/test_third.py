@@ -1,4 +1,4 @@
-from tasks.third import appearance
+from tasks.task3.solution import appearance
 
 
 def test_third_task(tests):

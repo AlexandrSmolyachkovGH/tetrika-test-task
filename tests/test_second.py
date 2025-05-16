@@ -1,6 +1,6 @@
 from unittest.mock import patch, Mock
 
-from tasks.second import parse_animals_from_html, fetch_html
+from tasks.task2.solution import parse_animals_from_html, fetch_html
 
 
 def test_fetch_html_success():
@@ -10,7 +10,7 @@ def test_fetch_html_success():
     mock_response.text = fake_html
     mock_response.encoding = 'utf-8'
 
-    with patch("tasks.second.requests.get", return_value=mock_response) as mock_get:
+    with patch("tasks.task2.solution.requests.get", return_value=mock_response) as mock_get:
         result = fetch_html("https://fake.url")
         assert result == fake_html
         mock_get.assert_called_once_with("https://fake.url", timeout=10)
